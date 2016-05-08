@@ -14,6 +14,9 @@ public class Building {
 
 	private Building_installation building_installation;
 	private Control_panel control_panel;
+
+	// de adaugat Generator, Surveillance, Room - restul relatiilor HAS-A
+	// de adaugat in constructor, getter, setters, toString apoi
 	
 	// constructor
 	public Building(int bid, String name, int height, int stories_above_ground, int stories_below_ground,

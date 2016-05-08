@@ -25,8 +25,11 @@ public class Generator {
 		return false;
 	}
 	/*
-	 * nu stiu exact ce sa fac cu functia asta
-	 * am adaugat-o aici in caz ca ii gasiti o intrebuintare
+	 * nu stiu exact ce sa fac cu functia asta call_engineer()
+	 * ma gandesc ca daca isFunctional == false
+	 * atunci call_engineer() returneaza true, altfel, returneaza false
+	 * voi ce credeti?
+	 * 
 	 * 
 	 * public boolean call_engineer() {
 		return false;
