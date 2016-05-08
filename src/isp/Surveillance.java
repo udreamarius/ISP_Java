@@ -49,7 +49,7 @@ public class Surveillance {
 	@Override
 	public String toString() {
 		return "\n\nSurveillance: \nNo_of_cameras = " + no_of_cameras + "\nOn = " + on + "\nFunctional = " + functional
-				+ "\nImplementation = " + implementation + "\n\n\n";
+				+ "\nImplementation = " + implementation;
 	}
 	
 	

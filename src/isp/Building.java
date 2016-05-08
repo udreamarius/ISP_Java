@@ -15,13 +15,14 @@ public class Building {
 	private Building_installation building_installation;
 	private Generator generator;
 	private Surveillance surveillance;
-	private Room room;
+	private Room[] rooms;
+	private int nmbRooms;
 	
 	
 	// constructor
 	public Building(int bid, String name, int height, int stories_above_ground, int stories_below_ground,
 			int floor_height, String roof_type, String address, Building_installation building_installation, 
-			Generator generator, Surveillance surveillance, Room room) {
+			Generator generator, Surveillance surveillance, Room[] rooms, int nmbRooms) {
 		super();
 		this.bid = bid;
 		this.name = name;
@@ -34,7 +35,8 @@ public class Building {
 		this.building_installation = building_installation;
 		this.generator = generator;
 		this.surveillance = surveillance;
-		this.room = room;
+		this.rooms = rooms;
+		this.nmbRooms = nmbRooms;
 	}
 	
 	// getters
@@ -73,11 +75,9 @@ public class Building {
 	public Surveillance getSurveillance() {
 		return surveillance;
 	}
-	public Room getRoom() {
-		return room;
+	public Room getRoom(int index) {
+		return rooms[index];
 	}
-
-	
 	
 	// setters
 	public void setBid(int bid) {
@@ -113,8 +113,9 @@ public class Building {
 	public void setSurveillance(Surveillance surveillance) {
 		this.surveillance = surveillance;
 	}
-	public void setRoom(Room room) {
-		this.room = room;
+	public void setRooms(Room[] rooms, int nmbRooms) {
+		this.rooms = rooms;
+		this.nmbRooms = nmbRooms;
 	}
 
 	
@@ -124,16 +125,21 @@ public class Building {
 	// toString
 
 	public String buildingSpecifications() {
-		String rroom = room.roomSpecifications();
+		int i;
+		String rroom = "";
+		
+		for (i = 0; i < this.nmbRooms; i++)
+			rroom = rroom + Integer.toString(i)+ ") " + rooms[i].roomSpecifications() + "\n";
+		
 		return "Building Specifications: \nBID = " + bid + "\nName = " + name + "\nHeight = " + height + "\nStories_above_ground = "
 				+ stories_above_ground + "\nStories_below_ground = " + stories_below_ground + "\nFloor_height = "
-				+ floor_height + "\nRoof_type = " + roof_type + "\nAddress = " + address + building_installation + generator + surveillance + rroom + "\n\n\n";
+				+ floor_height + "\nRoof_type = " + roof_type + "\nAddress = " + address + building_installation + generator + surveillance + rroom;
 	}
 	
 	public String buildingAttributes() {
 		return "Building Attributes: \nBID = " + bid + "\nName = " + name + "\nHeight = " + height + "\nStories_above_ground = "
 				+ stories_above_ground + "\nStories_below_ground = " + stories_below_ground + "\nFloor_height = "
-				+ floor_height + "\nRoof_type = " + roof_type + "\nAddress = " + address + "\n\n\n";
+				+ floor_height + "\nRoof_type = " + roof_type + "\nAddress = " + address;
 	}
 
 

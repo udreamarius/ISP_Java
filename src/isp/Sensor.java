@@ -37,6 +37,17 @@ public class Sensor {
 		return "\n\nSensor: \nFunctional = " + functional + "\nActive = " + active;
 	}
 	
+	public void call_112() {
+		System.out.println("\nCalling 112...");
+		this.active = false;
+		System.out.println("Sensor is off. :D");
+	}
 	
+	public void call_engineer() {
+		System.out.println("\nCalling engineer...");
+		System.out.println("Engineer: \"YEP?..\"");
+		this.functional = true;
+		System.out.println("Engineer: \"Sensor is now functional. ;)\"");
+	}
 	
 }

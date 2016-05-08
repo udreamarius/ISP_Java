@@ -53,7 +53,7 @@ public class Generator {
 	// toString
 	@Override
 	public String toString() {
-		return "\n\nGenerator: \nOn = " + on + "\nFloor = " + floor + "\nFunctional = " + functional + "\n\n\n";
+		return "\n\nGenerator: \nOn = " + on + "\nFloor = " + floor + "\nFunctional = " + functional;
 	}
 
 }

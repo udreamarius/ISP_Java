@@ -52,7 +52,7 @@ public class Equipment {
 	@Override
 	public String toString() {
 		return "Equipment: \nName = " + name + "\nID = " + id + "\nSpecialBehavior = " + specialBehavior
-				+ "\nActiveSpecialBehavior = " + activeSpecialBehavior + "\n\n\n";
+				+ "\nActiveSpecialBehavior = " + activeSpecialBehavior;
 	}
 	
 	

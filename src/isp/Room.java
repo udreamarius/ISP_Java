@@ -81,10 +81,10 @@ public class Room {
 
 	public String roomSpecifications() {
 		return "Room specifications: \nNumber = " + number + "\nUsage = " + usage + "\nFloor = " + floor + sensor
-				+ control_panel + surveillance + equipment + "\n\n\n";
+				+ control_panel + surveillance + equipment;
 	}
 	public String roomAttributes() {
-		return "Room attributes: \nNumber = " + number + "\nUsage = " + usage + "\nFloor = " + floor + "\n\n\n";
+		return "Room attributes: \nNumber = " + number + "\nUsage = " + usage + "\nFloor = " + floor;
 	}
 
 }
