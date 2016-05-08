@@ -12,19 +12,6 @@ public class Room {
 	private Equipment equipment;
 	
 	
-
-	/* TODO:
-	 * o camera HAS sensors, surveillance, equipment
-	 * am adaugat si Control_panel pentru a verifica daca este
-	 * camera in care se afla panoul de control
-	 * 
-	 * getters/setters/constructor
-	 *  
-	 *  
-	 *  DONE:  getters, setters, constructor
-	 *  DONE CLASSES: Survaillance, Control_panel
-	 *  TODO CLASSES:  Equipment, Sensor
-	*/
 	
 	
 
@@ -91,12 +78,13 @@ public class Room {
 	
 	
 	// toString
-	@Override
-	public String toString() {
-		return "Room [number=" + number + ", usage=" + usage + ", floor=" + floor + ", sensor=" + sensor
-				+ ", control_panel=" + control_panel + ", surveillance=" + surveillance + ", equipment=" + equipment
-				+ "]";
-	}
 
+	public String roomSpecifications() {
+		return "Room specifications: \nNumber = " + number + "\nUsage = " + usage + "\nFloor = " + floor + sensor
+				+ control_panel + surveillance + equipment + "\n\n\n";
+	}
+	public String roomAttributes() {
+		return "Room attributes: \nNumber = " + number + "\nUsage = " + usage + "\nFloor = " + floor + "\n\n\n";
+	}
 
 }

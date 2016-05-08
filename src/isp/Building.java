@@ -13,15 +13,16 @@ public class Building {
 	private String address;
 
 	private Building_installation building_installation;
-	private Control_panel control_panel;
-
-	// de adaugat Generator, Surveillance, Room - restul relatiilor HAS-A
-	// de adaugat in constructor, getter, setters, toString apoi
+	private Generator generator;
+	private Surveillance surveillance;
+	private Room room;
+	
 	
 	// constructor
 	public Building(int bid, String name, int height, int stories_above_ground, int stories_below_ground,
-			int floor_height, String roof_type, String address, Building_installation building_installation,
-			Control_panel control_panel) {
+			int floor_height, String roof_type, String address, Building_installation building_installation, 
+			Generator generator, Surveillance surveillance, Room room) {
+		super();
 		this.bid = bid;
 		this.name = name;
 		this.height = height;
@@ -31,7 +32,9 @@ public class Building {
 		this.roof_type = roof_type;
 		this.address = address;
 		this.building_installation = building_installation;
-		this.control_panel = control_panel;
+		this.generator = generator;
+		this.surveillance = surveillance;
+		this.room = room;
 	}
 	
 	// getters
@@ -62,11 +65,19 @@ public class Building {
 	public Building_installation getBuilding_installation() {
 		return building_installation;
 	}
-	public Control_panel getControl_panel() {
-		return control_panel;
+
+
+	public Generator getGenerator() {
+		return generator;
+	}
+	public Surveillance getSurveillance() {
+		return surveillance;
+	}
+	public Room getRoom() {
+		return room;
 	}
 
-
+	
 	
 	// setters
 	public void setBid(int bid) {
@@ -96,8 +107,14 @@ public class Building {
 	public void setBuilding_installation(Building_installation building_installation) {
 		this.building_installation = building_installation;
 	}
-	public void setControl_panel(Control_panel control_panel) {
-		this.control_panel = control_panel;
+	public void setGenerator(Generator generator) {
+		this.generator = generator;
+	}
+	public void setSurveillance(Surveillance surveillance) {
+		this.surveillance = surveillance;
+	}
+	public void setRoom(Room room) {
+		this.room = room;
 	}
 
 	
@@ -105,12 +122,19 @@ public class Building {
 	
 	
 	// toString
-	@Override
-	public String toString() {
-		return "Building [bid=" + bid + ", name=" + name + ", height=" + height + ", stories_above_ground="
-				+ stories_above_ground + ", stories_below_ground=" + stories_below_ground + ", floor_height="
-				+ floor_height + ", roof_type=" + roof_type + ", address=" + address + ", building_installation="
-				+ building_installation + ", control_panel=" + control_panel + "]";
+
+	public String buildingSpecifications() {
+		String rroom = room.roomSpecifications();
+		return "Building Specifications: \nBID = " + bid + "\nName = " + name + "\nHeight = " + height + "\nStories_above_ground = "
+				+ stories_above_ground + "\nStories_below_ground = " + stories_below_ground + "\nFloor_height = "
+				+ floor_height + "\nRoof_type = " + roof_type + "\nAddress = " + address + building_installation + generator + surveillance + rroom + "\n\n\n";
 	}
+	
+	public String buildingAttributes() {
+		return "Building Attributes: \nBID = " + bid + "\nName = " + name + "\nHeight = " + height + "\nStories_above_ground = "
+				+ stories_above_ground + "\nStories_below_ground = " + stories_below_ground + "\nFloor_height = "
+				+ floor_height + "\nRoof_type = " + roof_type + "\nAddress = " + address + "\n\n\n";
+	}
+
 
 }

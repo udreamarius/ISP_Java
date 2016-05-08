@@ -9,6 +9,7 @@ public class Surveillance {
 	
 	// constructor
 	public Surveillance(int no_of_cameras, boolean on, boolean functional, String implementation) {
+		super();
 		this.no_of_cameras = no_of_cameras;
 		this.on = on;
 		this.functional = functional;
@@ -47,8 +48,8 @@ public class Surveillance {
 	// toString
 	@Override
 	public String toString() {
-		return "Surveillance [no_of_cameras=" + no_of_cameras + ", on=" + on + ", functional=" + functional
-				+ ", implementation=" + implementation + "]";
+		return "\n\nSurveillance: \nNo_of_cameras = " + no_of_cameras + "\nOn = " + on + "\nFunctional = " + functional
+				+ "\nImplementation = " + implementation + "\n\n\n";
 	}
 	
 	

@@ -9,6 +9,7 @@ public class Generator {
 	
 	// constructor
 	public Generator(boolean on, int floor, boolean functional) {
+		super();
 		this.on = on;
 		this.floor = floor;
 		this.functional = functional;
@@ -16,13 +17,13 @@ public class Generator {
 	
 	// getters
 	public boolean isOn() {
-		return false;
+		return on;
 	}
 	public int getFloor() {
 		return floor;
 	}
 	public boolean isFunctional() {
-		return false;
+		return functional;
 	}
 	/*
 	 * nu stiu exact ce sa fac cu functia asta call_engineer()
@@ -52,7 +53,7 @@ public class Generator {
 	// toString
 	@Override
 	public String toString() {
-		return "Generator [on=" + on + ", floor=" + floor + ", functional=" + functional + "]";
+		return "\n\nGenerator: \nOn = " + on + "\nFloor = " + floor + "\nFunctional = " + functional + "\n\n\n";
 	}
 
 }

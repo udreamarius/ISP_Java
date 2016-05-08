@@ -8,6 +8,7 @@ public class Control_panel {
 	
 	// constructor
 	public Control_panel(boolean on, int floor, boolean functional) {
+		super();
 		this.on = on;
 		this.floor = floor;
 		this.functional = functional;
@@ -16,13 +17,13 @@ public class Control_panel {
 	
 	// getters
 	public boolean isOn() {
-		return false;
+		return on;
 	}
 	public int getFloor() {
 		return floor;
 	}
 	public boolean isFunctional() {
-		return false;
+		return functional;
 	}
 	/*
 	 * nu stiu exact ce sa fac cu functia asta
@@ -47,6 +48,6 @@ public class Control_panel {
 	// toString
 	@Override
 	public String toString() {
-		return "Control_panel [on=" + on + ", floor=" + floor + ", functional=" + functional + "]";
+		return "\n\nControl_panel: \nOn = " + on + "\nFloor = " + floor + "\nFunctional = " + functional;
 	}
 }

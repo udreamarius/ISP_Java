@@ -10,6 +10,7 @@ public class Building_installation {
 
 	// constructor
 	public Building_installation(int no_of_lifts, int no_of_stairwells, int smoke_proof_tower, int no_of_entries) {
+		super();
 		this.no_of_lifts = no_of_lifts;
 		this.no_of_stairwells = no_of_stairwells;
 		this.smoke_proof_tower = smoke_proof_tower;
@@ -31,11 +32,11 @@ public class Building_installation {
 	}
 
 
-	// toString
+	
 	@Override
 	public String toString() {
-		return "Building_installation [no_of_lifts=" + no_of_lifts + ", no_of_stairwells=" + no_of_stairwells
-				+ ", smoke_proof_tower=" + smoke_proof_tower + ", no_of_entries=" + no_of_entries + "]";
+		return "\n\nBuilding_installation: \nNo_of_lifts = " + no_of_lifts + "\nNo_of_stairwells = " + no_of_stairwells
+				+ "\nSmoke_proof_tower = " + smoke_proof_tower + "\nNo_of_entries = " + no_of_entries;
 	}
 	
 }
