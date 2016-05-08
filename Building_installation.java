@@ -35,5 +35,12 @@ public class Building_installation {
 	public int getNo_of_entries() {
 		return no_of_entries;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Building_installation [no_of_lifts=" + no_of_lifts + ", no_of_stairwells=" + no_of_stairwells
+				+ ", smoke_proof_tower=" + smoke_proof_tower + ", no_of_entries=" + no_of_entries + "]";
+	}
 	
 }

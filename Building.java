@@ -72,5 +72,14 @@ public class Building {
 	public Building_installation getBuilding_installation() {
 		return building_installation;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Building [bid=" + bid + ", name=" + name + ", height=" + height + ", stories_above_ground="
+				+ stories_above_ground + ", stories_below_ground=" + stories_below_ground + ", floor_height="
+				+ floor_height + ", roof_type=" + roof_type + ", address=" + address + ", building_installation="
+				+ building_installation + "]";
+	}
 	
 }
