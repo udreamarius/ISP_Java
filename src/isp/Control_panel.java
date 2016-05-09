@@ -25,15 +25,7 @@ public class Control_panel {
 	public boolean isFunctional() {
 		return functional;
 	}
-	/*
-	 * nu stiu exact ce sa fac cu functia asta
-	 * am adaugat-o aici in caz ca ii gasiti o intrebuintare
-	 * 
-	 * public boolean call_engineer() {
-		return false;
-	}
-	*/
-	
+
 	// setters
 	public void setOn(boolean on) {
 		this.on = on;
