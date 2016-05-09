@@ -25,19 +25,7 @@ public class Generator {
 	public boolean isFunctional() {
 		return functional;
 	}
-	/*
-	 * nu stiu exact ce sa fac cu functia asta call_engineer()
-	 * ma gandesc ca daca isFunctional == false
-	 * atunci call_engineer() returneaza true, altfel, returneaza false
-	 * voi ce credeti?
-	 * 
-	 * 
-	 * public boolean call_engineer() {
-		return false;
-	}
-	*/
-	
-	
+
 	// setters
 	public void setOn(boolean on) {
 		this.on = on;
