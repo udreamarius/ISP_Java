@@ -38,5 +38,21 @@ public class Building_installation {
 		return "\n\nBuilding_installation: \nNo_of_lifts = " + no_of_lifts + "\nNo_of_stairwells = " + no_of_stairwells
 				+ "\nSmoke_proof_tower = " + smoke_proof_tower + "\nNo_of_entries = " + no_of_entries;
 	}
+
+	public void setNo_of_lifts(int no_of_lifts) {
+		this.no_of_lifts = no_of_lifts;
+	}
+
+	public void setNo_of_stairwells(int no_of_stairwells) {
+		this.no_of_stairwells = no_of_stairwells;
+	}
+
+	public void setSmoke_proof_tower(int smoke_proof_tower) {
+		this.smoke_proof_tower = smoke_proof_tower;
+	}
+
+	public void setNo_of_entries(int no_of_entries) {
+		this.no_of_entries = no_of_entries;
+	}
 	
 }

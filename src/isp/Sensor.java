@@ -16,10 +16,10 @@ public class Sensor {
 	
 	//getterse
 	public boolean isFunctional() {
-		return functional;
+		return this.functional;
 	}
 	public boolean isActive() {
-		return active;
+		return this.active;
 	}
 	
 	

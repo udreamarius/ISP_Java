@@ -68,7 +68,6 @@ public class Building {
 		return building_installation;
 	}
 
-
 	public Generator getGenerator() {
 		return generator;
 	}
@@ -77,6 +76,10 @@ public class Building {
 	}
 	public Room getRoom(int index) {
 		return rooms[index];
+	}
+	
+	public int getNmbRooms() {
+		return nmbRooms;
 	}
 	
 	// setters

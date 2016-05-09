@@ -21,10 +21,10 @@ public class Surveillance {
 		return no_of_cameras;
 	}
 	public boolean isOn() {
-		return false;
+		return this.on;
 	}
 	public boolean isFunctional() {
-		return false;
+		return this.functional;
 	}
 	public String getImplementation() {
 		return implementation;
